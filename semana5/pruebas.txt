@@ -1,0 +1,13 @@
+Pruebas de las rutas del servidor
+
+1. http://localhost:3000
+   Resultado: Muestra el mensaje "Servidor activo"
+   Explicación: Esta es la ruta raíz (/) que se ejecuta con el método GET. El servidor responde con un mensaje de confirmación de que está funcionando correctamente.
+
+2. http://localhost:3000/saludo
+   Resultado: Muestra el mensaje "Hola comunidad"
+   Explicación: Esta ruta GET /saludo devuelve un saludo fijo a todos los usuarios que la visiten.
+
+3. http://localhost:3000/mensaje/juan
+   Resultado: Muestra el mensaje "Hola juan"
+   Explicación: Esta ruta GET /mensaje/:nombre captura el parámetro dinámico "nombre" de la URL y lo utiliza para personalizar la respuesta. Si se cambia "juan" por otro nombre, el servidor responde con ese nombre específico.
